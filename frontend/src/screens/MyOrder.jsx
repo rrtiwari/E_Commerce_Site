@@ -7,7 +7,7 @@ export default function MyOrder() {
 
   const fetchMyOrder = async () => {
     try {
-      await fetch("http://localhost:5000/api/auth/myOrderData", {
+      await fetch("https://go-food-backend-ykrv.onrender.com/api/auth/myOrderData", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

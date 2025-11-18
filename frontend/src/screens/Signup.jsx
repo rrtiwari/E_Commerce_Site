@@ -23,7 +23,7 @@ export default function Signup() {
       async (position) => {
         const { latitude: lat, longitude: long } = position.coords;
         const response = await fetch(
-          "http://localhost:5000/api/auth/getlocation",
+          "https://go-food-backend-ykrv.onrender.com/api/auth/getlocation",
           {
             method: "POST",
             headers: { "Content-Type": "application/json" },
@@ -45,7 +45,7 @@ export default function Signup() {
     e.preventDefault();
     try {
       const response = await fetch(
-        "http://localhost:5000/api/auth/createuser",
+        "https://go-food-backend-ykrv.onrender.com/api/auth/createuser",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
